@@ -22,14 +22,10 @@ func (b Book) printBookInfo() {
 	fmt.Println("The author name is", b.author)
 }
 
-func (p Library) callBooksInfo() {
+func (p Library) printAllBooks() {
 	for i := range p.books {
 		p.books[i].printBookInfo()
 	}
-}
-
-func (p Library) printAllBooks() {
-	p.callBooksInfo()
 }
 
 func main() {
